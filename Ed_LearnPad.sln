@@ -1,7 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed_LearnPad", "Ed_LearnPad\Ed_LearnPad.csproj", "{4B937DC8-6E76-462F-A826-57D1417B171B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed_LearnPad_Web", "Ed_LearnPad\Ed_LearnPad_Web.csproj", "{4B937DC8-6E76-462F-A826-57D1417B171B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed_LearnPad_Data", "Ed_LearnPadData\Ed_LearnPad_Data.csproj", "{279C03DC-1742-41B0-8936-912BF3F46DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ed_LearnPad_LoginWS", "Ed_LearnPad_LoginWS\Ed_LearnPad_LoginWS.csproj", "{59CEE19E-D38B-417E-8234-C9587ECD728E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ED_LearnPad_Core", "ED_LearnPad_Core\ED_LearnPad_Core.csproj", "{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,18 @@ Global
 		{4B937DC8-6E76-462F-A826-57D1417B171B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B937DC8-6E76-462F-A826-57D1417B171B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B937DC8-6E76-462F-A826-57D1417B171B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279C03DC-1742-41B0-8936-912BF3F46DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279C03DC-1742-41B0-8936-912BF3F46DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279C03DC-1742-41B0-8936-912BF3F46DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279C03DC-1742-41B0-8936-912BF3F46DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CEE19E-D38B-417E-8234-C9587ECD728E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CEE19E-D38B-417E-8234-C9587ECD728E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CEE19E-D38B-417E-8234-C9587ECD728E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CEE19E-D38B-417E-8234-C9587ECD728E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
