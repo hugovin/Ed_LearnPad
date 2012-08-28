@@ -5,7 +5,8 @@ using System.Text;
 
 namespace ED_LearnPad_Core
 {
-    public class Class1
+    public class Cart
     {
+
     }
 }
