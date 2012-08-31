@@ -11,6 +11,8 @@ namespace Ed_LearnPad.Controllers
        
         public JsonResult AddProduct(int title_id, string sku, int quantity)
         {
+
+
             return Json(true, JsonRequestBehavior.AllowGet);
         }
     }

@@ -16,7 +16,14 @@ namespace Ed_LearnPad.Controllers
 
         public ActionResult About()
         {
-            return RedirectToAction("Index", "Home");
+            return View();
         }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        
     }
 }

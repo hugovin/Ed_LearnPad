@@ -1,8 +1,167 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@section AddToHead{
+    <link href="@Url.Content("~/Content/css/pages/homepage.css")" rel="stylesheet")" type="text/css" />
 }
 
-<h2>@ViewBag.Message</h2>
-<p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
+<div id="masthead">
+		
+		<div class="container">
+		
+			<div id="masthead-carousel" class="carousel slide">
+				
+				<div class="carousel-inner">
+					<div class="active item">
+						<img src="../../Content/img/masthead/masthead.jpg" alt="" />
+				
+						<div class="masthead-details">
+							
+							<h2>Masthead title goes right here!</h2>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+							
+						</div> <!-- /masthead-details -->
+					</div> <!-- /item -->
+					
+					<div class="item">
+						<img src="../../Content/img/masthead/masthead-2.jpg" alt="" />
+				
+						<div class="masthead-details">
+							
+							<h2>Masthead title goes right here!</h2>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+							
+						</div> <!-- /masthead-details -->
+					</div> <!-- /item -->
+					
+					<div class="item">
+						<img src="../../Content/img/masthead/masthead-4.jpg" alt="" />
+				
+						<div class="masthead-details">
+							
+							<h2>Masthead title goes right here!</h2>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+							
+						</div> <!-- /masthead-details -->
+					</div> <!-- /item -->
+					
+					<div class="item">
+						<img src="../../Content/img/masthead/masthead-3.jpg" alt="" />
+				
+						<div class="masthead-details">
+							
+							<h2>Masthead title goes right here!</h2>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+							
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+							
+						</div> <!-- /masthead-details -->
+					</div> <!-- /item -->
+					
+				</div> <!-- /carousel-inner -->
+				
+				<a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
+				
+			</div> <!-- /masthead-carousel -->
+			
+		</div> <!-- /container -->
+	
+	</div> <!-- /masthead -->
+ 
+ <div id="content">
+		
+		<div class="container">
+		
+			<div class="row">
+				<div id="welcome" class="grid-12">
+					<h1>Educational Experts providing software, hardware and supplemental learning solutions</h1>
+				</div>
+			</div> <!-- /row -->
+			
+			
+			<hr class="row-divider" />
+			
+			
+			<div class="row work-container">
+				
+				<div class="grid-3">
+					<h2><span class="slash">//</span> Our Work</h2>
+					
+					<p>Maecenas a mi nibh, eu euismod orci. Vivamus viverra lacus vitae.</p>
+					
+					<a href="javascript:;" class="btn btn-small btn-warning">More Work</a>
+					
+				</div> <!-- /grid-3 -->
+				
+				<div class="grid-3">
+					<div class="work-item">
+						
+						<h3>Portfolio Item #1</h3>
+						
+						<a class="thumbnail">
+							<img src="../../Content/img/gallery/1_small.jpg" alt="" />
+						</a> <!-- /img -->
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+						<p><a href="javascript:;" class="">View Project »</a></p>			
+					</div>
+				</div> <!-- /grid-3 -->
+				
+				<div class="grid-3">
+					<div class="work-item">
+						
+						<h3>Portfolio Item #1</h3>
+						
+						<a class="thumbnail">
+							<img src="../../Content/img/gallery/2_small.jpg" alt="" />
+						</a> <!-- /img -->
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+						<p><a href="javascript:;" class="">View Project »</a></p>			
+					</div>
+				</div> <!-- /grid-3 -->
+				
+				<div class="grid-3">
+					<div class="work-item">
+						
+						<h3>Portfolio Item #1</h3>
+						
+						<a class="thumbnail">
+							<img src="../../Content/img/gallery/3_small.jpg" alt="" />
+						</a> <!-- /img -->
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						
+						<p><a href="javascript:;" class="">View Project »</a></p>			
+					</div>
+				</div> <!-- /grid-3 -->
+				
+			</div> <!-- /row -->
+			
+			
+			
+			
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /content -->
+
+@section AddToScripts{
+   <script>
+       $(function () {
+
+           $('#masthead-carousel').carousel({ interval: false });
+
+       });
+   </script>
+}

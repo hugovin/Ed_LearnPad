@@ -2,113 +2,206 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/css/bootstrap.css")" rel="stylesheet" type="text/css" />
-    <link href="@Url.Content("~/Content/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
-    <style>
-        body
-        {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-    </style>
-    <script src="@Url.Content("~/Scripts/js/libs/jquery-1.7.2.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/libs/modernizr-2.5.3-respond-1.1.0.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/libs/knockout-2.1.0.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/js/libs/bootstrap/bootstrap.js")" type="text/javascript"></script>
-    <script src="../../Scripts/js/script.js"></script>
-    <script>
-        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-        (function (d, t) {
-            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g, s)
-        } (document, 'script'));
-    </script>
+    <title>ER - LearnPad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/css/focus.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/css/focus-responsive.css")" rel="stylesheet" />
+    @if (IsSectionDefined("AddToHead"))
+    {
+        @RenderSection("AddToHead", required: false)
+    }
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-    <body>
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
-                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </a><a class="brand" href="#">Project name</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="hero-unit">
-                @RenderBody()
-            </div>
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>
-                        Heading</h2>
-                    <p>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                        commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                        Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    </p>
-                    <p>
-                        <a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>
-                        Heading</h2>
-                    <p>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                        commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                        Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    </p>
-                    <p>
-                        <a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-                <div class="span4">
-                    <h2>
-                        Heading</h2>
-                    <p>
-                        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                        Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus
-                        commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p>
-                        <a class="btn" href="#">View details &raquo;</a></p>
-                </div>
-            </div>
-            <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
-        </div>
-        @*    <div class="page">
-        <header>
-            <div id="title">
-                <h1>My MVC Application</h1>
-            </div>
-            <div id="logindisplay">
-                @Html.Partial("_LogOnPartial")
-            </div>
-            <nav>
-                <ul id="menu">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="main">
-            
-        </section>
-        <footer>
-        </footer>
-    </div>*@
-    </body>
+    
+
+<div id="wrapper" class="clearfix">
+	
+	<div id="header">
+		
+		<div class="container">
+			
+			<h1 id="title">
+				@Html.ActionLink("ER", "Index", "Home")
+			</h1>
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /header -->	
+	
+	
+	<div id="nav" class="clearfix">
+		
+		<div class="container">
+		
+			<ul id="main-nav">
+				<li class="active">
+					@Html.ActionLink("Home", "Index", "Home")
+				</li>
+				
+				<li>
+					@Html.ActionLink("Who We Are", "About", "Home")
+				</li>
+				
+				<li>
+					<a href="./services.html">Services</a>
+				</li>
+				
+				<li>
+					<a href="./pricing.html">Pricing</a>
+				</li>
+				
+				<li>
+					<a href="./faq.html">Faq</a>
+				</li>
+				
+				<li>
+					@Html.ActionLink("Contact", "Contact", "Home")
+				</li>
+				
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown">
+						Dropdown
+						<span class="caret"></span>
+					</a>
+					
+					<ul class="dropdown-menu">
+						<li><a href="javascript:;"><i class="icon-home"></i> Dropdown #1</a></li>
+						<li><a href="javascript:;"><i class="icon-beaker"></i> Dropdown #2</a></li>
+						<li><a href="javascript:;"><i class="icon-bullhorn"></i> Dropdown #3</a></li>
+						<li><a href="javascript:;"><i class="icon-cloud"></i> Dropdown #4</a></li>
+					</ul>
+				</li>				
+				
+			</ul>
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /nav -->
+	
+	
+	
+	
+	@RenderBody()
+	
+	
+	
+	<div id="footer">
+		
+		<div class="container">
+		
+			<div class="row">
+				
+				<div class="grid-4">
+					<h1 id="footer-logo">Focus Business</h1>
+					
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+				</div> <!-- /grid-4 -->
+				
+				<div class="grid-4">
+					
+					<h3><span class="slash">//</span> Socialize with us!</h3>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt magna aliqua.</p>
+					
+					<ul class="social-icons-container">						
+						<li>
+							<a href="javascript:;" class="social-icon social-icon-twitter">
+								Twitter
+							</a>
+						</li>
+							
+						<li>
+							<a href="javascript:;" class="social-icon social-icon-googleplus">
+								Google +
+							</a>
+						</li>
+						
+						<li>							
+							<a href="javascript:;" class="social-icon social-icon-facebook">
+								Facebook
+							</a>
+						</li>
+						
+					</ul>
+					
+				</div> <!-- /grid-4 -->
+				
+				<div class="grid-4">
+						
+					<h3><span class="slash">//</span> Subscribe and get updates</h3>
+					
+	
+					<p>Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+					
+					
+					<form>
+						
+						<input type="text" name="subscribe_email" placeholder="Your Email">
+						
+						<br>
+						
+						<button class="btn btn-warning">Subscribe</button>
+					</form>
+					
+					
+				</div><!-- /grid-4 -->
+				
+			</div> <!-- /row -->
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /footer -->
+	
+	
+	
+	<div id="copyright">
+		
+		<div class="container">
+			
+			<div class="row">
+			
+				<div id="rights" class="grid-6">
+				© 2012 Propel UI. All Rights Reserved.
+				</div> <!-- /grid-6 -->
+				
+				<div id="totop" class="grid-6">
+					<a href="http://propelui.com">Built by Propel.</a>
+				</div> <!-- /grid-6 -->
+				
+			</div> <!-- /row -->
+			
+		</div> <!-- /container -->
+			
+	</div> <!-- /copyright -->
+	
+</div> <!-- /wrapper -->
+
+    <!-- The javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/jquery-1.7.2.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/js/focus.js")"></script>
+    <script>
+        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+       (function (d, t) {
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+           s.parentNode.insertBefore(g, s)
+      } (document, 'script'));
+    </script>
+
+    @if (IsSectionDefined("AddToScripts"))
+    {
+        @RenderSection("AddToScripts", required: false)
+    }
+</body>
 </html>

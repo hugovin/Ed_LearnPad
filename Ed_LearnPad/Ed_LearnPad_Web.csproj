@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
@@ -73,13 +74,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.html" />
-    <Content Include="Content\css\bootstrap-responsive.css" />
-    <Content Include="Content\css\bootstrap-responsive.min.css" />
-    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\components\plans.css" />
+    <Content Include="Content\css\focus-responsive.css" />
+    <Content Include="Content\css\focus.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\pages\about.css" />
+    <Content Include="Content\css\pages\contact.css" />
+    <Content Include="Content\css\pages\homepage.css" />
+    <Content Include="Content\css\pages\services.css" />
+    <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\img\bg.png" />
+    <Content Include="Content\img\bodyBg.jpg" />
+    <Content Include="Content\img\footer_logo.png" />
+    <Content Include="Content\img\gallery\1_large.jpg" />
+    <Content Include="Content\img\gallery\1_small.jpg" />
+    <Content Include="Content\img\gallery\2_large.jpg" />
+    <Content Include="Content\img\gallery\2_small.jpg" />
+    <Content Include="Content\img\gallery\3_large.jpg" />
+    <Content Include="Content\img\gallery\3_small.jpg" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\header_logo.png" />
+    <Content Include="Content\img\ios-linen.jpg" />
+    <Content Include="Content\img\masthead\masthead-2.jpg" />
+    <Content Include="Content\img\masthead\masthead-3.jpg" />
+    <Content Include="Content\img\masthead\masthead-4.jpg" />
+    <Content Include="Content\img\masthead\masthead.jpg" />
+    <Content Include="Content\img\profiles\profile-1.png" />
+    <Content Include="Content\img\profiles\profile-2.png" />
+    <Content Include="Content\img\profiles\profile-3.png" />
+    <Content Include="Content\img\responsive-nav-bg.png" />
+    <Content Include="Content\img\social\social-sprite.png" />
+    <Content Include="Content\img\title.jpg" />
+    <Content Include="Content\img\title.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -118,6 +146,12 @@
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\contact.js" />
+    <Content Include="Scripts\js\focus.js" />
+    <Content Include="Scripts\js\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\js\jquery.ui.map.js" />
+    <Content Include="Scripts\js\knockout-2.1.0.js" />
     <Content Include="Scripts\js\libs\bootstrap\alert.js" />
     <Content Include="Scripts\js\libs\bootstrap\bootstrap.js" />
     <Content Include="Scripts\js\libs\bootstrap\bootstrap.min.js" />
@@ -136,7 +170,8 @@
     <Content Include="Scripts\js\libs\jquery-1.7.2.min.js" />
     <Content Include="Scripts\js\libs\knockout-2.1.0.js" />
     <Content Include="Scripts\js\libs\modernizr-2.5.3-respond-1.1.0.min.js" />
-    <Content Include="Scripts\js\script.js" />
+    <Content Include="Scripts\js\plugins\faq\faq.css" />
+    <Content Include="Scripts\js\plugins\faq\faq.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Web.config" />
@@ -146,7 +181,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -180,6 +214,13 @@
       <Project>{5A62503A-37C3-4CCA-8B5C-C2A44CE85577}</Project>
       <Name>ED_LearnPad_Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\font\fontawesome-webfont.eot" />
+    <None Include="Content\font\fontawesome-webfont.svgz" />
+    <None Include="Content\font\fontawesome-webfont.ttf" />
+    <None Include="Content\font\fontawesome-webfont.woff" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -45,7 +45,7 @@ namespace Ed_LearnPad.Controllers
         {
             if (Session["CurrentUser"] == null)
             {
-                return RedirectToAction("Index", "Home");s
+                return RedirectToAction("Index", "Home");
             }
 
             return RedirectToAction("Index", "Home");
